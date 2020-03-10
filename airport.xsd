@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Global Types -->
+    <xs:simpleType name="AirportName">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="London International Airport (XYU)"/>      
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TimeType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{2}:\d{2}"/>
+        </xs:restriction>
+    </xs:simpleType>    
+
+    <xs:simpleType name="Airline">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Air Canada"/>
+            <xs:enumeration value="Air Transat"/>
+            <xs:enumeration value="Sunwing"/>
+            <xs:enumeration value="Swoop"/>
+            <xs:enumeration value="WestJet"/>
+            <xs:enumeration value="WestJet Encore"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Flight">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+            <xs:maxInclusive value="9999" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Arriving_Departing">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Abbotsford"/>
+            <xs:enumeration value="Calgary"/>
+            <xs:enumeration value="Cancun"/>
+            <xs:enumeration value="Cayo Santa Maria"/>
+            <xs:enumeration value="Edmonton"/>
+            <xs:enumeration value="Hamilton"/>
+            <xs:enumeration value="Las Vegas"/>
+            <xs:enumeration value="Montego Bay"/>
+            <xs:enumeration value="Montreal"/>
+            <xs:enumeration value="Orlando"/>
+            <xs:enumeration value="Ottawa"/>
+            <xs:enumeration value="Puerto Plata"/>
+            <xs:enumeration value="Punta Cana"/>
+            <xs:enumeration value="Sault Ste Marie"/>
+            <xs:enumeration value="Toronto"/>
+            <xs:enumeration value="Varadero"/>
+            <xs:enumeration value="Winnipeg"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ArrivalStatus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Arrived"/>
+            <xs:enumeration value="Cancelled"/>
+            <xs:enumeration value="Diverted"/>
+            <xs:enumeration value="Early"/>
+            <xs:enumeration value="Late"/>
+            <xs:enumeration value="On Time"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="DepartureStatus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Cancelled"/>
+            <xs:enumeration value="Departed"/>
+            <xs:enumeration value="Delayed"/>
+            <xs:enumeration value="On Time"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Instance document structure -->
+    <xs:element name="airport">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="lastUpdated" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="date" type="xs:date" />
+                        <xs:element name="time" type="xs:time"/>
+                    </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="arrivals" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="arrival" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="airline" type="Airline" minOccurs="1" maxOccurs="1" />
+                                        <xs:element name="flight" type="Flight" minOccurs="1" maxOccurs="1" />
+                                        <xs:element name="arrivingFrom" type="Arriving_Departing" minOccurs="1" maxOccurs="1" />
+                                        <xs:element name="scheduledTime" type="TimeType" minOccurs="1" maxOccurs="1" />
+                                        <xs:element name="actualTime" type="TimeType" minOccurs="1" maxOccurs="1" />
+                                        <xs:element name="status" type="ArrivalStatus" minOccurs="1" maxOccurs="1" />
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="departures" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="departure" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="airline" type="Airline" minOccurs="1" maxOccurs="1" />
+                                        <xs:element name="flight" type="Flight" minOccurs="1" maxOccurs="1" />
+                                        <xs:element name="departingTo" type="Arriving_Departing" minOccurs="1" maxOccurs="1" />
+                                        <xs:element name="scheduledTime" type="TimeType" minOccurs="1" maxOccurs="1" />
+                                        <xs:element name="actualTime" type="TimeType" minOccurs="1" maxOccurs="1" />
+                                        <xs:element name="status" type="DepartureStatus" minOccurs="1" maxOccurs="1" />
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>   
+            </xs:sequence>
+            <xs:attribute name="name" type="AirportName" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

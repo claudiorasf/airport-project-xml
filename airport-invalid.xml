@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<airport 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="airport.xsd"
+    name="London International Airport (XYU)">
+    <lastUpdated>
+        <date>2020-01-23</date>
+        <time>11:28:56</time>
+    </lastUpdated>
+    <arrivals>
+        <arrival>
+            <airline>Air Canada</airline>
+            <!-- An Arrival field containing an invalid number of Airline fields -->
+            <airline>Air Canada</airline>
+            <flight>8643</flight>
+            <arrivingFrom>Toronto</arrivingFrom>
+            <scheduledTime>08:46</scheduledTime>
+            <actualTime>08:47</actualTime>
+            <status>Arrived</status>
+        </arrival>
+        <arrival>
+            <!-- An invalid Airline value for an Arrival -->
+            <airline>Air France</airline>
+            <flight>374</flight>
+            <!-- An invalid Arriving From value for an Arrival -->
+            <arrivingFrom>Paris</arrivingFrom>
+            <scheduledTime>09:25</scheduledTime>
+            <actualTime>09:25</actualTime>
+            <!-- An invalid Status value for an Arrival -->
+            <status>In Time</status>
+        </arrival>
+        <arrival>
+            <airline>WestJet</airline>
+            <flight>3517</flight>
+            <arrivingFrom>Toronto</arrivingFrom>
+            <scheduledTime>10:03</scheduledTime>
+            <actualTime>10:02</actualTime>
+            <status>Arrived</status>
+        </arrival>
+        <arrival>
+            <airline>Swoop</airline>
+            <flight>208</flight>
+            <arrivingFrom>Edmonton</arrivingFrom>
+            <scheduledTime>11:38</scheduledTime>
+            <actualTime>11:55</actualTime>
+            <status>Late</status>
+        </arrival>
+        <arrival>
+            <airline>Air Canada</airline>
+            <flight>8645</flight>
+            <arrivingFrom>Toronto</arrivingFrom>
+            <scheduledTime>11:41</scheduledTime>
+            <actualTime>11:31</actualTime>
+            <status>Early</status>
+        </arrival>
+        <arrival>
+            <airline>Air Canada</airline>
+            <flight>8659</flight>
+            <arrivingFrom>Ottawa</arrivingFrom>
+            <scheduledTime>13:50</scheduledTime>
+            <actualTime>13:47</actualTime>
+            <status>Early</status>
+        </arrival>
+        <arrival>
+            <airline>Swoop</airline>
+            <flight>683</flight>
+            <arrivingFrom>Cancun</arrivingFrom>
+            <scheduledTime>14:23</scheduledTime>
+            <actualTime>14:25</actualTime>
+            <status>Late</status>
+        </arrival>
+        <arrival>
+            <airline>Air Canada</airline>
+            <flight>8649</flight>
+            <arrivingFrom>Toronto</arrivingFrom>
+            <scheduledTime>14:31</scheduledTime>
+            <actualTime>14:31</actualTime>
+            <status>On Time</status>
+        </arrival>
+        <arrival>
+            <airline>Air Canada</airline>
+            <flight>8665</flight>
+            <arrivingFrom>Montreal</arrivingFrom>
+            <scheduledTime>15:08</scheduledTime>
+            <actualTime>15:08</actualTime>
+            <status>On Time</status>
+        </arrival>
+        <!-- An element (anywhere) that is not defined in the schema -->
+        <airplane></airplane>
+        <arrival>
+            <!-- An attribute (anywhere) that is not defined in the schema -->
+            <airline type="Boeing">Air Transat</airline>
+            <flight>8479</flight>
+            <arrivingFrom>Cancun</arrivingFrom>
+            <scheduledTime>15:10</scheduledTime>
+            <actualTime>15:10</actualTime>
+            <status>Arrived</status>
+        </arrival>
+    </arrivals>
+    <!-- An invalid number of Arrivals fields-->
+    <arrivals>
+        <arrival>
+            <airline>Air Canada</airline>
+            <flight>8643</flight>
+            <arrivingFrom>Toronto</arrivingFrom>
+            <scheduledTime>08:46</scheduledTime>
+            <actualTime>08:47</actualTime>
+            <status>Arrived</status>
+        </arrival>
+    </arrivals>
+    <departures>
+        <departure>
+            <airline>Air Canada</airline>
+            <!-- An invalid Flight value for a Departure -->
+            <flight>86474</flight>
+            <departingTo>Toronto</departingTo>
+            <!-- A Departure field containing an invalid number of Depart To fields -->
+            <departingTo>Toronto</departingTo>
+            <scheduledTime>09:10</scheduledTime>
+            <!-- An invalid Actual Time value for a Departure -->
+            <actualTime>09:14:00</actualTime>
+            <status>Departed</status>
+        </departure>
+        <departure>
+            <airline>Sunwing</airline>
+            <flight>374</flight>
+            <!-- An invalid Departing To value for a Departure -->
+            <departingTo>Vancouver</departingTo>
+            <scheduledTime>10:15</scheduledTime>
+            <actualTime>10:15</actualTime>
+            <status>On Time</status>
+        </departure>
+        <departure>
+            <airline>WestJet</airline>
+            <flight>539</flight>
+            <departingTo>Edmonton</departingTo>
+            <scheduledTime>09:10</scheduledTime>
+            <actualTime>09:12</actualTime>
+            <status>Departed</status>
+        </departure>
+        <departure>
+            <airline>Air Canada</airline>
+            <flight>462</flight>
+            <departingTo>Punta Cana</departingTo>
+            <scheduledTime>09:30</scheduledTime>
+            <actualTime>10:00</actualTime>
+            <status>Delayed</status>
+        </departure>
+        <departure>
+            <airline>Swoop</airline>
+            <flight>3516</flight>
+            <departingTo>Toronto</departingTo>
+            <scheduledTime>10:35</scheduledTime>
+            <actualTime>10:34</actualTime>
+            <status>Departed</status>
+        </departure>
+        <departure>
+            <airline>Air Canada</airline>
+            <flight>8646</flight>
+            <departingTo>Toronto</departingTo>
+            <scheduledTime>12:05</scheduledTime>
+            <actualTime>12:05</actualTime>
+            <status>On Time</status>
+        </departure>
+        <departure>
+            <airline>Air Canada</airline>
+            <flight>221</flight>
+            <departingTo>Abbotsford</departingTo>
+            <scheduledTime>12:25</scheduledTime>
+            <actualTime>12:25</actualTime>
+            <status>On Time</status>
+        </departure>
+        <departure>
+            <airline>Swoop</airline>
+            <flight>8648</flight>
+            <departingTo>Toronto</departingTo>
+            <scheduledTime>13:25</scheduledTime>
+            <actualTime>13:25</actualTime>
+            <status>On Time</status>
+        </departure>
+        <departure>
+            <airline>Air Transat</airline>
+            <flight>8660</flight>
+            <departingTo>Ottawa</departingTo>
+            <scheduledTime>14:15</scheduledTime>
+            <actualTime>14:15</actualTime>
+            <status>On Time</status>
+        </departure>
+        <departure>
+            <airline>Swoop</airline>
+            <flight>8652</flight>
+            <departingTo>Montreal</departingTo>
+            <scheduledTime>14:55</scheduledTime>
+            <actualTime>14:55</actualTime>
+            <status>On Time</status>
+        </departure>
+    </departures>
+</airport>

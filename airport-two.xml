@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<airport 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="airport.xsd"
+    name="London International Airport (XYU)">
+    <lastUpdated>
+        <date>2020-02-06</date>
+        <time>22:44:56</time>
+    </lastUpdated>
+    <arrivals>
+        <arrival>
+            <airline>Swoop</airline>
+            <flight>833</flight>
+            <arrivingFrom>Las Vegas</arrivingFrom>
+            <scheduledTime>19:37</scheduledTime>
+            <actualTime>20:16</actualTime>
+            <status>Arrived</status>
+        </arrival>
+        <arrival>
+            <airline>Air Canada</airline>
+            <flight>8661</flight>
+            <arrivingFrom>Ottawa</arrivingFrom>
+            <scheduledTime>21:15</scheduledTime>
+            <actualTime>23:16</actualTime>
+            <status>Late</status>
+        </arrival>
+        <arrival>
+            <airline>Swoop</airline>
+            <flight>342</flight>
+            <arrivingFrom>Abbotsford</arrivingFrom>
+            <scheduledTime>21:52</scheduledTime>
+            <actualTime>22:22</actualTime>
+            <status>Arrived</status>
+        </arrival>
+        <arrival>
+            <airline>Air Canada</airline>
+            <flight>8655</flight>
+            <arrivingFrom>Toronto</arrivingFrom>
+            <scheduledTime>22:16</scheduledTime>
+            <actualTime>22:43</actualTime>
+            <status>Arrived</status>
+        </arrival>
+        <arrival>
+            <airline>WestJet</airline>
+            <flight>3507</flight>
+            <arrivingFrom>Toronto</arrivingFrom>
+            <scheduledTime>23:20</scheduledTime>
+            <actualTime>00:13</actualTime>
+            <status>Late</status>
+        </arrival>
+        <arrival>
+            <airline>WestJet</airline>
+            <flight>736</flight>
+            <arrivingFrom>Calgary</arrivingFrom>
+            <scheduledTime>00:16</scheduledTime>
+            <actualTime>00:04</actualTime>
+            <status>Early</status>
+        </arrival>
+        <arrival>
+            <airline>Air Transat</airline>
+            <flight>815</flight>
+            <arrivingFrom>Puerto Plata</arrivingFrom>
+            <scheduledTime>02:15</scheduledTime>
+            <actualTime>02:15</actualTime>
+            <status>On Time</status>
+        </arrival>
+        <arrival>
+            <airline>Air Canada</airline>
+            <flight>8643</flight>
+            <arrivingFrom>Toronto</arrivingFrom>
+            <scheduledTime>08:46</scheduledTime>
+            <actualTime>08:46</actualTime>
+            <status>On Time</status>
+        </arrival>
+        <arrival>
+            <airline>WestJet</airline>
+            <flight>3517</flight>
+            <arrivingFrom>Toronto</arrivingFrom>
+            <scheduledTime>10:03</scheduledTime>
+            <actualTime>10:03</actualTime>
+            <status>On Time</status>
+        </arrival>
+        <arrival>
+            <airline>Swoop</airline>
+            <flight>208</flight>
+            <arrivingFrom>Edmonton</arrivingFrom>
+            <scheduledTime>11:38</scheduledTime>
+            <actualTime>11:38</actualTime>
+            <status>On Time</status>
+        </arrival>
+    </arrivals>
+    <departures>
+        <departure>
+            <airline>Swoop</airline>
+            <flight>834</flight>
+            <departingTo>Las Vegas</departingTo>
+            <scheduledTime>20:30</scheduledTime>
+            <actualTime>21:33</actualTime>
+            <status>Departed</status>
+        </departure>
+        <departure>
+            <airline>Swoop</airline>
+            <flight>539</flight>
+            <departingTo>Edmonton</departingTo>
+            <scheduledTime>22:40</scheduledTime>
+            <actualTime>23:15</actualTime>
+            <status>Delayed</status>
+        </departure>
+        <departure>
+            <airline>Air Canada</airline>
+            <flight>8640</flight>
+            <departingTo>Toronto</departingTo>
+            <scheduledTime>05:55</scheduledTime>
+            <actualTime>05:55</actualTime>
+            <status>On Time</status>
+        </departure>
+        <departure>
+            <airline>WestJet</airline>
+            <flight>735</flight>
+            <departingTo>Calgary</departingTo>
+            <scheduledTime>06:00</scheduledTime>
+            <actualTime>06:00</actualTime>
+            <status>On Time</status>
+        </departure>
+        <departure>
+            <airline>Air Canada</airline>
+            <flight>8658</flight>
+            <departingTo>Ottawa</departingTo>
+            <scheduledTime>06:15</scheduledTime>
+            <actualTime>06:15</actualTime>
+            <status>On Time</status>
+        </departure>
+        <departure>
+            <airline>WestJet</airline>
+            <flight>3504</flight>
+            <departingTo>Toronto</departingTo>
+            <scheduledTime>06:55</scheduledTime>
+            <actualTime>06:55</actualTime>
+            <status>On Time</status>
+        </departure>
+        <departure>
+            <airline>Air Canada</airline>
+            <flight>8644</flight>
+            <departingTo>Toronto</departingTo>
+            <scheduledTime>09:10</scheduledTime>
+            <actualTime>09:10</actualTime>
+            <status>On Time</status>
+        </departure>
+        <departure>
+            <airline>WestJet</airline>
+            <flight>3516</flight>
+            <departingTo>Toronto</departingTo>
+            <scheduledTime>10:35</scheduledTime>
+            <actualTime>10:35</actualTime>
+            <status>On Time</status>
+        </departure>
+        <departure>
+            <airline>Air Canada</airline>
+            <flight>8646</flight>
+            <departingTo>Toronto</departingTo>
+            <scheduledTime>12:05</scheduledTime>
+            <actualTime>12:05</actualTime>
+            <status>On Time</status>
+        </departure>
+        <departure>
+            <airline>Swoop</airline>
+            <flight>221</flight>
+            <departingTo>Abbotsford</departingTo>
+            <scheduledTime>12:25</scheduledTime>
+            <actualTime>12:25</actualTime>
+            <status>On Time</status>
+        </departure>
+    </departures>
+</airport>

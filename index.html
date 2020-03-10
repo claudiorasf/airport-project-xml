@@ -1,0 +1,33 @@
+﻿<!--
+	File:           index.html
+    Author:         Claudio Souza
+    Date:           Jan 29th, 2020
+    Description:    XML Project 1 (Load a XML document into a webpage. Validate the XML using a XML Schema.)    
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>London Airport Arrivals and Departures</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="loadXMLDoc();">
+
+    <h1 id="airportName"></h1>
+    <h2 id="dateTime"></h2>
+    
+    <form>
+        <label for="arrivals">
+        <input type="radio" class="radio" name="airport" value="arrivals" onclick="showFlights('arrival');">Arrivals</label>
+        <label for="departures">
+        <input type="radio" class="radio" name="airport" value="departures" onclick="showFlights('departure');">Departures</label>
+    </form>
+
+    <h3 id="info"></h3>
+
+    <table class="flights" id="airportData"></table>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

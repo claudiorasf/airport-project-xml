@@ -1,0 +1,58 @@
+/*
+    File:           main.js
+    Author:         Claudio Souza
+    Date:           Jan 29th, 2020
+    Description:    XML Project 1 (Load a XML document into a webpage. Validate the XML using a XML Schema.)  
+*/
+
+body, html {
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    margin: 1%;
+}
+
+.radio {
+    display: inline;
+    margin: 1%;
+    font-weight: bold;
+}
+
+.flights {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 98%;
+    margin: 1%;
+}
+
+.flights td, .flights th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.flights tr:nth-child(even){background-color: #f2f2f2;}
+
+.flights tr:hover {background-color: #ddd;}
+
+.flights th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: rgb(51, 74, 104);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  height: 50px;
+  padding: 10px 20px 10px 20px;
+}
+
+.arrived {
+    color: #009929;
+    font-weight: bold;
+}
+
+.late {
+    color: #e8483c;
+    font-weight: bold;
+}
